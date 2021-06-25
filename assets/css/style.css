@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Scroll bar Styling*/
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/*----------------------------------------------*/
+html, body {
+    background-color: #e3e9ee;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+
+/*Root Container styling*/
+.root-container {
+    display: flex;
+    /*gap: 10px;*/
+    width: 100%;
+    height: 100%;
+}
+
+.root-container > .left-container {
+    width: 20%;
+    height: 100vh;
+    overflow: auto;
+    background-color: #FBFBFB;
+}
+
+.root-container > .right-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 80%;
+    height: 100vh;
+    overflow: auto;
+}
+
+/*Dashboard styling..........*/
+.root-container > .left-container > .nav-container {
+    position: relative;
+    min-height: 798px;
+    height: 100%;
+    width: 100%;
+    background-color: #FBFBFB;
+}
+
+.root-container > .left-container > .nav-container > .logo {
+    position: absolute;
+    width: 180px;
+    height: 70px;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.root-container > .left-container > .nav-container > .logo > i {
+    position: absolute;
+    left: 0;
+    font-size: 30px;
+}
+
+.root-container > .left-container > .nav-container > .logo > h1 {
+    position: absolute;
+    left: 38px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.root-container > .left-container > .nav-container > .logo > h1 > span {
+    position: relative;
+    left: 10px;
+    color: #6C63FF;
+}
+
+.root-container > .left-container > .nav-container > .navbar-nav {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+    top: 160px;
+}
+
+.root-container > .left-container > .nav-container > .navbar-nav > div {
+    position: relative;
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.root-container > .left-container > .nav-container > .navbar-nav > div > div {
+    position: absolute;
+    display: none;
+    width: 10px;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #6C63FF;
+    left: -5px;
+    box-shadow: 3px 2px 7px 1px #c3c3c3;
+}
+
+.root-container > .left-container > .nav-container > .navbar-nav > div:nth-child(1) > div {
+    display: block;
+}
+
+.root-container > .left-container > .nav-container > .navbar-nav > div > button {
+    position: absolute;
+    cursor: pointer;
+    width: 160px;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #FBFBFB;
+    transition: all 0.6s ease;
+    box-shadow: none;
+}
+
+.root-container > .left-container > .nav-container > .navbar-nav > div > button:hover {
+    transform: scale(1.2);
+}
+
+.root-container > .left-container > .nav-container > .navbar-nav > div:nth-child(1) > button {
+    background-color: #6C63FF;
+    box-shadow: 3px 2px 7px 1px #c3c3c3;
+}
+
+.root-container > .left-container > .nav-container > .navbar-nav > div > button > i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #BCBCBC;
+}
+
+.root-container > .left-container > .nav-container > .navbar-nav > div:nth-child(1) > button > i {
+    color: #F8F8F8;
+}
+
+.root-container > .left-container > .nav-container > .navbar-nav > div > button > span {
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #BCBCBC;
+}
+
+.root-container > .left-container > .nav-container > .navbar-nav > div:nth-child(1) > button > span {
+    color: #F8F8F8;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+/*Header Navbar styling*/
+.root-container > .right-container > .top-nav-bar {
+    position: relative;
+    z-index: 5;
+    width: 99.5%;
+    height: 70px;
+    background-color: #FBFBFB;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+}
+
+.root-container > .right-container > .top-nav-bar > .screenTitle {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+    height: 30px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.root-container > .right-container > .top-nav-bar > .screenTitle > i {
+    position: relative;
+    font-size: 16px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.root-container > .right-container > .top-nav-bar > .screenTitle > span {
+    position: relative;
+    padding-left: 5px;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.root-container > .right-container > .top-nav-bar > .user {
+    position: absolute;
+    right: 120px;
+    width: 185px;
+    height: 30px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.root-container > .right-container > .top-nav-bar > .user > i {
+    position: absolute;
+    font-size: 16px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.root-container > .right-container > .top-nav-bar > .user > h3 {
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.root-container > .right-container > .top-nav-bar > .settings {
+    position: absolute;
+    cursor: pointer;
+    font-size: 16px;
+    right: 60px;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border: 3px solid #e3e9ee;
+    border-radius: 100%;
+    background-color: #FBFBFB;
+}
+
+.root-container > .right-container > .top-nav-bar > .sign-out {
+    position: absolute;
+    font-size: 16px;
+    cursor: pointer;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border: 3px solid #e3e9ee;
+    border-radius: 100%;
+    background-color: #FBFBFB;
+}
+
+/*-----------------------------------------------*/
+
+/*Main Container styling*/
+.root-container > .right-container > .main-container {
+    width: 99.5%;
+    min-height: calc(100% - 50px);
+    left: 0;
+    right: 0;
+    margin-left: auto;
+}
+
+/*------------------------------------------------*/
+
+/*Home view styling*/
+
+.main-container > .login-container {
+    position: relative;
+    width: 60%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #F8F8F8;
+    box-shadow: 2px 3px 5px 3px #cccccc;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+/*------------------------------------------------*/
+
+/*Profile view styling*/
+.main-container > .profile-content--container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.profile-content--container > .header {
+    position: relative;
+    height: 5px;
+}
+
+.profile-content--container > .profile-form {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    width: 95%;
+    overflow: auto;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #F8F8F8;
+    box-shadow: 2px 3px 5px 3px #cccccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.profile-content--container > .footer {
+    position: relative;
+    height: 5px;
+}
+
+/*Schedule view styling*/
+.main-container >  .drivers-schedule-container {
+    position: relative;
+    width: 60%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    gap: 50px;
+    left: 0;
+    right: 0;
+    top: 100px;
+    margin: auto;
+    background-color: #F8F8F8;
+    box-shadow: 2px 3px 5px 3px #cccccc;
+    border-radius: 5px;
+}
+
+.drivers-schedule-container > .drivers-schedule-table {
+    position: absolute;
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Poppins', sans-serif;
+}
+
+.drivers-schedule-table tr th {
+    background-color: #dfdfdf;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+}
